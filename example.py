@@ -7,5 +7,7 @@ from forismatic import Forismatic
 f = Forismatic()
 
 # Getting Quote object & printing quote and author
+
 q = f.get_quote()
-print u'%s\t%s' % (q.quote, q.author)
+if q:
+  print '{0}\t{1}\n'.format(q.quote, q.author)
